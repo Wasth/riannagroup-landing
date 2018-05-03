@@ -1,0 +1,130 @@
+* {
+    font-family: HeliosCondC, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/* COMMON UTILITES*/
+.bold {
+    font-weight: bold;
+}
+.normal {
+    font-weight: normal;
+}
+.light {
+    font-weight: 100;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.clear {
+    clear: both;
+}
+.f-left {
+    float: left;
+}
+.f-right {
+    float: right;
+}
+.inline-block {
+    display: inline-block;
+}
+
+/* header */
+#header {
+    margin-top: 20px;
+}
+#header .header-line {
+    font-size: 20px;
+}
+#header .email {
+    color: #e84042;
+    font-size: 30px;
+    text-decoration: underline;
+}
+#header .email-icon {
+    position: relative;
+    top: 21px;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+#header .mail-text {
+    margin-left: 35px;
+}
+@media (max-width: 1125px) {
+    #header .header-line {
+        display: block;
+        float: none;
+        clear: both;
+        text-align: center;
+    }
+    #header .logo {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+}
+
+/* main block */
+
+#main {
+    background-image: url('../img/mainbg.jpg');
+    background-size: cover;
+    height: 624px;
+}
+#main .container {
+    position: relative;
+}
+#main h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+#main h2 {
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    width: 684px;
+    margin: 15px auto 0;
+}
+#main h2 span {
+    font-size: 38px;
+    color: #e84042;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#main form {
+    width: 610px;
+    border: 1px solid #ffb337;
+    padding: 30px 30px 10px;
+    background-color: rgba(255,255,255,0.8);
+    margin: 15px auto 0;
+}
+#main form p {
+    font-size: 14px;
+    text-align: center;
+}
+#main form input, #main form textarea{
+    border: 1px solid #bababa;
+    font-size: 16px;
+    padding: 17px;
+}
+#main form input[type=file]{
+    display: none;
+}
+#main form .row-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+#main form textarea {
+    margin-top: 15px;
+    width: calc(100% - 36px);
+    height: 70px;
+    resize: none;
+}
+#mainGirl {
+    top: 50px;
+    position: absolute;
+}
