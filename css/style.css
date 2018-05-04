@@ -70,7 +70,7 @@
 #main {
     background-image: url('../img/mainbg.jpg');
     background-size: cover;
-    height: 624px;
+    min-height: 624px;
 }
 #main .container {
     position: relative;
@@ -153,4 +153,58 @@
     margin-top: 7px;
     float: left;
     border-right: 1px solid white;
+}
+
+/* new supplier */
+#newSupplier {
+    background-image: url('../img/newsupplier.jpg');
+    background-size: cover;
+    padding: 50px 0;
+}
+#newSupplier h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #00284f;
+    text-align: center;
+}
+#newSupplier h2 {
+    color: #e84042;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+}
+#newSupplier p {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#newSupplier .row-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+#newSupplier .row-3 div {
+    background-size: contain;
+    height: 339px;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 0 60px;
+}
+#newSupplier .row-3 div span {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    top: 240px;
+}
+#newSupplier #ns1 {
+    background-image: url('../img/1nsblock.png');
+}
+#newSupplier #ns2 {
+    background-image: url('../img/2nsblock.png');
+}
+#newSupplier #ns3 {
+    background-image: url('../img/3nsblock.png');
 }
