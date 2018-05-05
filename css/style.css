@@ -208,3 +208,60 @@
 #newSupplier #ns3 {
     background-image: url('../img/3nsblock.png');
 }
+/* own production block */
+#ownProduct {
+    padding: 50px 0;
+    background-image: url('../img/ownproductbg.jpg');
+    background-size: cover;
+}
+#ownProduct h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: #e84042;
+    margin-bottom: 20px;
+}
+#ownProduct h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #00284f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#ownProduct .row-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 58px;
+    margin-top: 40px;
+}
+#ownProduct .row-4 div {
+    height: 365px;
+    border: 1px solid #00284f;
+}
+#ownProduct .row-4.left-img img {
+    position: relative;
+    top: -15px;
+    left: -15px;
+}
+#ownProduct .row-4.right-img img {
+    position: relative;
+    top: -15px;
+    left: 15px;
+}
+#ownProduct p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+#ownProduct h4 {
+    padding: 0 10px;
+    font-size: 24px;
+}
+/* pluses */
+#pluses {
+    background: url('../img/plusesline.jpg') repeat-x;
+    background-position: center center;
+}
+#pluses .row-3 {
+    text-align: center;
+}
