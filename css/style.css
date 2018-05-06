@@ -136,7 +136,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
-}
+
+}#main form .row-3:nth-child(1){
+     overflow: hidden;
+     border-right: 1px solid lightgray;
+ }
 #main form textarea {
     margin-top: 15px;
     width: calc(100% - 36px);
@@ -633,8 +637,12 @@
     text-align: left;
 }
 /* quality control block */
-#qualityControl.wrapper {
+#qualityControl {
     padding: 50px 0;
+    background-image: url('../img/qualitybg.jpg');
+    background-repeat: no-repeat;
+    background-position: center 510px;
+    background-size: contain ;
 }
 #qualityControl h1 {
     font-size: 48px;
@@ -648,4 +656,73 @@
     text-align: center;
     text-transform: uppercase;
     color: #00284f;
+    margin-bottom: 30px;
+}
+#qualityControl .shadow {
+    height: 187px;
+
+    position: relative;
+    top: 430px;
+    z-index: -1;
+}
+#qualityControl .grid-2-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px;
+}
+#qualityControl .grid-2-2 div p {
+    font-size: 24px;
+    max-width: 250px;
+    padding-left: 20px;
+}
+#qualityControl .red-block {
+    background-color: #e84042;
+    text-align: center;
+    height: 270px;
+    width: 270px;
+}
+#qualityControl .red-block h3 {
+    font-size: 24px;
+}
+#qualityControl .grid-2-2 .red-block p{
+    font-size: 16px;
+
+}
+#qualityControl .red-block h3, #qualityControl .red-block p{
+    color: #fff;
+}
+#qualityControl .red-block:nth-child(1) img {
+    margin-top: 50px;
+}
+#qualityControl .red-block:nth-child(4) img {
+    margin-top: 50px;
+}
+#qualityControl .red-block:nth-child(3) img {
+    margin-top: 30px;
+}
+#qualityControl .line {
+    width: 70px;
+    height: 2px;
+    background-color: #fff;
+    margin: 20px auto;
+}
+#qualityControl .f-right img {
+    box-shadow: 0px 0px 68px -19px rgba(0,0,0,0.6  );
+}
+#qualityControl fieldset {
+    border: 1px solid #e84042;
+    padding: 40px;
+}
+#qualityControl legend {
+    margin-left: 50px;
+    padding: 0 15px;
+}
+#qualityControl p {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+#qualityControl p img {
+    margin-right: 15px;
+    position: relative;
+    top: 0px;
 }
