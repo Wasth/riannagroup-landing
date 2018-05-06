@@ -354,3 +354,56 @@
 #oporaSlider .arrow.right {
     left: 31px;
 }
+/*scheme slider*/
+#schemeSlider {
+    background-image: url('../img/schemeslider.jpg');
+    padding: 50px 0;
+}
+#schemeSlider h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+#schemeSlider h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+#schemeSlider .slides {
+     background-color: #fff;
+     height: 598px;
+     border: 1px solid #00284f;
+ }
+#schemeSlider .slider-content {
+    padding: 30px;
+}
+#schemeSlider .slider-windows {
+    border: 1px solid #c1d9eb;
+}
+#schemeSlider .arrow {
+    height: 58px;
+    width: 58px;
+    border: 1px solid #c1d9eb;
+    top: 270px;
+    background-color: #00284f;
+}
+#schemeSlider .arrow:hover {
+    background-color: #c1d9eb;
+}
+#schemeSlider .arrow.left {
+    left: -31px;
+    background-image: url('../img/lefth.png');
+}
+#schemeSlider .arrow.right {
+    left: 31px;
+    background-image: url('../img/righth.png');
+}
+#schemeSlider .arrow.left:hover {
+    background-image: url('../img/left.png');
+}
+#schemeSlider .arrow.right:hover {
+    background-image: url('../img/right.png');
+}
