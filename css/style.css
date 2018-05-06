@@ -488,6 +488,7 @@
     color: #fff;
     font-weight: bold;
     font-size: 17px;
+    cursor: pointer;
 }
 #zayavka .col.row-2 {
     display: grid;
@@ -502,4 +503,149 @@
     font-size: 20px;
     border: 0;
     font-weight: bold;
+    cursor: pointer;
+}
+
+/* algorytm block */
+#algo {
+    background-image: url('../img/algobg.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0;
+}
+#algo .container {
+    position: relative;
+}
+#algo .algoimg {
+
+    position: absolute;
+    left: 181px;
+}
+#algo h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 48px;
+    color: #00284f;
+    margin-bottom: 20px;
+}
+#algo h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: normal;
+    color: #00284f;
+    margin-bottom: 20px;
+}
+#algo .part {
+    width: 400px;
+    /*position: absolute;*/
+    /*top: 0;*/
+}
+#algo .part .part-number {
+    font-weight: 100;
+    font-size: 48px;
+    color: #c1d9eb;
+    position: relative;
+    top: 12px;
+}
+#algo .part .part-time img{
+    position: relative;
+    top: 2px;
+}
+#algo .part h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #00284f;
+}
+#algo .part .part-text {
+    font-size: 18px;
+    color: #00284f;
+}
+#algo .part .part-time {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00284f;
+    padding: 12px;
+    text-transform: uppercase;
+}
+#algo .left-items {
+    float: left;
+    margin-top: 40px;
+}
+#algo .right-items {
+    float: right;
+    margin-top: 40px;
+}
+
+/* left-prticles */
+#algo .left-part:nth-child(2) {
+    margin-top: 7px;
+}
+#algo .left-part:nth-child(3) {
+    margin-top: 17px;
+}
+#algo .part-time img {
+    margin-right: 15px;
+}
+#algo .left-part .part-text, #algo .left-part h3 {
+    text-align: left;
+}
+#algo .left-part .part-time{
+    background: linear-gradient(to right, #c1d9eb, rgba(0,0,0,0));
+    text-align: left;
+}
+#algo .left-part .part-number {
+    text-align: left;
+}
+/*right particles*/
+#algo .right-part {
+
+}
+#algo .right-part .part-text, #algo .right-part h3 {
+    text-align: right;
+}
+#algo .right-part .part-time img {
+    margin-left: 15px;
+}
+#algo .right-part .part-time{
+    background: linear-gradient(to left, #c1d9eb, rgba(0,0,0,0));
+    text-align: right;
+}
+#algo .right-part .part-number {
+    text-align: right;
+}
+/*middle particle*/
+#algo .middle-part {
+    clear: both;
+    margin: 800px auto 0;
+}
+#algo .middle-part .part-text, #algo .middle-part h3 {
+    text-align: center;
+}
+#algo .part-time img {
+    margin-left: 15px;
+}
+#algo .middle-part .part-time{
+    background: linear-gradient(to right, rgba(0,0,0,0), #c1d9eb, rgba(0,0,0,0));
+    text-align: center;
+}
+#algo .middle-part .part-number {
+    text-align: left;
+}
+/* quality control block */
+#qualityControl.wrapper {
+    padding: 50px 0;
+}
+#qualityControl h1 {
+    font-size: 48px;
+    text-align: center;
+    color: #e84042;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#qualityControl h2 {
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00284f;
 }
