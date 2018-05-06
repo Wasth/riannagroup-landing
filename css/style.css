@@ -29,7 +29,22 @@
 .inline-block {
     display: inline-block;
 }
-
+.arrow {
+    cursor: pointer;
+    position: relative;
+}
+.arrow.left {
+    background: url('../img/left.png') no-repeat center center;
+}
+.arrow.left:hover {
+    background-image: url('../img/lefth.png');
+}
+.arrow.right {
+    background: url('../img/right.png') no-repeat center center;
+}
+.arrow.right:hover {
+    background-image: url('../img/righth.png');
+}
 /* header */
 #header {
     margin-top: 20px;
@@ -261,7 +276,81 @@
 #pluses {
     background: url('../img/plusesline.jpg') repeat-x;
     background-position: center center;
+    margin-bottom: 30px;
 }
 #pluses .row-3 {
     text-align: center;
+}
+/*opora slider*/
+#oporaSlider {
+    padding: 50px 0;
+    background-image: url('../img/oporasliderbg.jpg');
+    background-size: cover;
+}
+#oporaSlider h1 {
+    font-size: 48px;
+    text-align: center;
+    color: #00284f;
+    margin-bottom:40px;
+}
+#oporaSlider h2 {
+    font-size: 36px;
+    font-weight: normal;
+    color: #00284f;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#oporaSlider .tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+    border-bottom: 1px solid #00284f;
+}
+#oporaSlider .tabs div {
+    color: #00284f;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #c1d9eb;
+    cursor: pointer;
+}
+#oporaSlider .tabs div p{
+    display:table-cell;
+    vertical-align: middle;
+    height: 80px;
+    text-align: center;
+    margin: 0 auto;
+    width: 298px;
+}
+#oporaSlider .tabs div.active {
+    color: #fff;
+    background-color: #00284f;
+}
+#oporaSlider .slides {
+    background-color: #fff;
+    height: 598px;
+    border: 1px solid #00284f;
+}
+#oporaSlider .slider-content {
+    padding: 30px;
+}
+#oporaSlider .slider-windows {
+    border: 1px solid #c1d9eb;
+}
+#oporaSlider .arrow {
+    height: 58px;
+    width: 58px;
+    border: 1px solid #00284f;
+    top: 270px;
+    background-color: #eef5fa;
+}
+#oporaSlider .arrow:hover {
+    background-color: #00284f;
+}
+#oporaSlider .arrow.left {
+    left: -31px;
+}
+#oporaSlider .arrow.right {
+    left: 31px;
 }
