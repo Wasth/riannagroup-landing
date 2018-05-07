@@ -858,3 +858,69 @@
 #reason .center-2 {
     text-align: center;
 }
+
+/* our projects block */
+#ourProjects {
+    padding: 50px 0;
+}
+#ourProjects h1 {
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00284f;
+    margin-bottom: 50px;
+}
+
+#ourProjects .tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1px;
+    border-bottom: 1px solid #00284f;
+}
+#ourProjects .tabs div {
+    color: #00284f;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #c1d9eb;
+    cursor: pointer;
+}
+#ourProjects .tabs div p{
+    display:table-cell;
+    vertical-align: middle;
+    height: 80px;
+    text-align: center;
+    margin: 0 auto;
+    width: 596px;
+}
+#ourProjects .tabs div.active {
+    color: #fff;
+    background-color: #00284f;
+}
+#ourProjects .slides {
+    background-color: #fff;
+    height: 598px;
+    border: 1px solid #00284f;
+}
+#ourProjects .slider-content {
+    padding: 30px;
+}
+#ourProjects .slider-windows {
+    border: 1px solid #b3bbbf;
+}
+#ourProjects .arrow {
+    height: 58px;
+    width: 58px;
+    border: 1px solid #00284f;
+    top: 270px;
+    background-color: #fff;
+}
+#ourProjects .arrow:hover {
+    background-color: #00284f;
+}
+#ourProjects .arrow.left {
+    left: -31px;
+}
+#ourProjects .arrow.right {
+    left: 31px;
+}
