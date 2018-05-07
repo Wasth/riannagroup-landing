@@ -811,3 +811,50 @@
     font-weight: bold;
     margin-bottom: 35px;
 }
+
+/*reason*/
+#reason {
+    padding: 50px 0;
+    background-image: url('../img/reasonbg.jpg');
+    background-size: cover;
+}
+#reason h1{
+    font-size: 48px;
+    text-align: center;
+    color: #00284f;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+#reason .row-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.reason {
+    display: inline-block;
+    width: 370px;
+    height: 400px;
+    margin-bottom:30px;
+}
+.reason .number {
+    font-weight: 100;
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+    position: relative;
+    top: -25px;
+}
+.reason .text {
+    text-align: center;
+    margin-top: 50px;
+}
+.reason .text h4 {
+    font-size: 22px;
+    color: #00284f;
+}
+.reason .text p {
+    font-size: 18px;
+    color: #00284f;
+}
+#reason .center-2 {
+    text-align: center;
+}
