@@ -924,3 +924,48 @@
 #ourProjects .arrow.right {
     left: 31px;
 }
+/* questions block */
+#questions {
+    padding: 50px 0;
+    background-image: url('../img/questionsbg.jpg');
+    background-size: cover;
+}
+#questions h1 {
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00284f;
+    margin-bottom: 50px;
+}
+
+.question {
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+.question .number {
+    font-size: 100px;
+    color: #dfecf5;
+    display: inline-block;
+    position: relative;
+    left: -3px;
+    margin-right: 15px;
+}
+.question .text {
+    width: 268px;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00284f;
+    position: relative;
+    top: -12px;
+}
+.question .answer {
+    display: inline-block;
+    font-size: 20px;
+    color: #00284f;
+    padding-left: 15px;
+    border-left: 1px solid #00284f;
+    position: relative;
+    top: -16px;
+}
