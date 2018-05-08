@@ -1125,3 +1125,135 @@
     font-weight: bold;
     color: #00284f;
 }
+/* contacts block */
+
+
+#contacts .contact-wrapper {
+    background-color: #e84042;
+    padding: 35px 0;
+}
+#contacts .contacts h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+}
+#contacts .contacts a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    top: -13px;
+    left: 5px
+}
+#contacts .contacts div div {
+    display: inline-block;
+    margin-top: -5px;
+    margin-left: 50px;
+}
+#contacts .contacts div.icon {
+    display: inline-block;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: no-repeat center center;
+}
+
+#contacts .contacts > div {
+    float: right;
+}
+#contacts .address a {
+    text-decoration: none;
+    font-weight: normal;
+    position: relative;
+    top: 0px;
+    left: 5px
+}
+.bottom-form-wrapper {
+    background-color: #00284f;
+    padding: 50px 0;
+}
+.bottom-form .row {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-gap: 30px;
+}
+.bottom-form .row h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.bottom-form .row h2 {
+    font-size: 27px;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.bottom-form .row h3 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.bottom-form .row h1 span {
+    color: #ffb337;
+}
+.bottom-form .row p {
+    color: #fff;
+}
+.bottom-form form {
+}
+.bottom-form form .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 670px;
+    grid-gap: 15px;
+}
+.bottom-form .col input, .bottom-form .col textarea{
+    display: block;
+    width: calc(100% - 36px);
+    border: 1px solid #c1d9eb;
+    padding: 17px;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom:15px;
+}
+.bottom-form .col textarea {
+    resize: none;
+    height: calc(100% - 51px);
+}
+.bottom-form input[type=file] {
+    display: none;
+}
+.bottom-form label div{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 7px;
+    float: left;
+}
+.bottom-form label {
+    padding: 5px;
+    background-color: #00284f;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    border: 1px solid #ffb337;
+}
+.bottom-form .col.row-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+.bottom-form button[type=submit] {
+    width: 100%;
+    height: 100%;
+    background-color: #ffb337;
+    color: #000;
+    font-size: 20px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
