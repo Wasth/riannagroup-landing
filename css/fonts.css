@@ -12,12 +12,12 @@
     font-style: normal;
 }
 
-/*@font-face {*/
-    /*font-family: 'HeliosExtraCompressedC';*/
-    /*src: url('../fonts/HeliosExtraCompressedC.otf');*/
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
-/*}*/
+@font-face {
+    font-family: 'HeliosExtra';
+    src: url('../fonts/heliosextracompressedc.otf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'HeliosCondC';

@@ -1257,3 +1257,41 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+/* footer */
+#footer {
+    padding: 18px 0;
+}
+#footer .container {
+    text-align: center;
+}
+#footer img {
+    float: left;
+}
+#footer .logo-text {
+    display: inline-block;
+    margin-left: 15px;
+    float: left;
+}
+#footer .logo-text h1 {
+    font-size: 35px;
+    font-family: HeliosExtra, sans-serif;
+    color: #e84042;
+}
+#footer .logo-text p {
+    font-size: 10px;
+    color: #e84042;
+}
+.allrights {
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 18px;
+}
+.politic {
+    float: right;
+    margin-top: 18px;
+}
+.politic a {
+    font-size: 18px;
+    color: #e84042;
+}
