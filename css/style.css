@@ -1092,3 +1092,36 @@
 #about .historyline p:nth-child(6){
     margin-left: 27px;
 }
+
+/* order details */
+#orderDetails {
+    padding: 50px 0;
+}
+#orderDetails h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 48px;
+    color: #00284f;
+    margin-bottom: 50px;
+}
+#orderDetails p.text {
+    text-align: center;
+    font-size: 30px;
+    color: #00284f;
+    line-height: 48px;
+    margin-bottom: 50px;
+}
+#orderDetails p.text span {
+    font-weight: bold;
+    color: #e84042;
+
+}
+#orderDetails .row-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#orderDetails .row-4  p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00284f;
+}
