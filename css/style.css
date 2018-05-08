@@ -989,8 +989,106 @@
 #about h1 span{
     font-size: 72px;
 }
-#about  p {
+#about  p.text {
     font-size: 30px;
     text-align: center;
     color: #fff;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+#about .row-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+#about .info {
+    background-color: rgba(255,255,255,.1);
+    padding: 40px 30px;
+}
+#about .info .separator {
+    background: linear-gradient(to right, #fff, rgba(0,0,0,0));
+    height: 1px;
+    margin: 15px 0;
+}
+#about .info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 20px;
+}
+#about .info p {
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+    text-align: left;
+    line-height: 1.5;
+}
+#about .info h3 img {
+    margin-right: 20px;
+    position: relative;
+    top: 3px;
+}
+#about .info h3:first-child {
+    margin-top: 0;
+}
+#about .quote fieldset{
+    border: 1px solid white;
+    padding: 30px;
+    clear: none;
+    padding-bottom: 110px;
+}
+#about .quote legend {
+    margin-left: -33px;
+    position: relative;
+    top: 30px;
+    padding-right: 5px;
+}
+#about .quote h3 {
+    font-size: 28px;
+    color: #fff;
+    line-height: 40px;
+}
+#about .quote .director {
+    margin-top: 50px;
+}
+#about .director h4 {
+    color: #fff;
+    font-size: 18px;
+}
+#about .director img {
+    margin-top: -265px;
+    margin-right: 20px;
+}
+#about h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+#about .historyline img {
+    margin-bottom: 20px;
+}
+#about .historyline p{
+    font-size: 18px;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    height: 147px;
+}
+#about .historyline p:nth-child(2){
+    margin-left: 85px;
+}
+#about .historyline p:nth-child(3){
+    margin-left: 40px;
+}
+#about .historyline p:nth-child(4){
+    margin-left: 68px;
+}
+#about .historyline p:nth-child(5){
+    margin-left: 23px;
+}
+#about .historyline p:nth-child(6){
+    margin-left: 27px;
 }
