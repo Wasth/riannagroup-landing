@@ -48,6 +48,9 @@
 .arrow.right:hover {
     background-image: url('../img/righth.png');
 }
+.tabs div, .tabs div.active {
+    transition: 0.2s;
+}
 /* header */
 #header {
     margin-top: 20px;
@@ -346,6 +349,14 @@
     height: 598px;
     border: 1px solid #00284f;
 }
+#oporaSlider .slide img {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
 #oporaSlider .slider-content {
     padding: 30px;
 }
@@ -370,7 +381,7 @@
 }
 /*scheme slider*/
 #schemeSlider {
-    background-image: url('../img/schemeslider.jpg');
+    background-image: url('../img/schemeslider/schemeslider.jpg');
     padding-top: 50px;
     padding-bottom: 100px;
 }
@@ -394,7 +405,7 @@
     text-align: center;
 }
 #schemeSlider .slide {
-    line-height: 100%;
+    /*line-height: 100%;*/
 }
 #schemeSlider .slide img {
     max-height: 100%;
