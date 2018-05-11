@@ -1,5 +1,4 @@
 $(function () {
-
     // kind of class for slider
     function Slider(content, slidingTime) {
         // declarations
@@ -40,6 +39,13 @@ $(function () {
                 'left':'0'
             },time);
         };
+        this.setActiveITab = function (i) {
+            if($(this.sliderBlock).parent().parent().find('.tabs div').length === 0) {
+                return false;
+            }
+            $(this.sliderBlock).parent().parent().find('.tabs div').removeClass('active')
+            $(this.sliderBlock).parent().parent().find('.tabs div:eq('+i+')').addClass('active')
+        }
         // preparing slider
         for(var i = 0;i < this.slideCount;i++) {
             this.setItoRight(i,0);
@@ -59,6 +65,7 @@ $(function () {
                 obj.setItoLeft(obj.sliderI, 0);
                 obj.setItoCenter(obj.sliderI, obj.slidingTime);
             }
+            obj.setActiveITab(obj.sliderI);
         });
     }
     // activate sliders
@@ -70,13 +77,5 @@ $(function () {
     var sliderScheme = new Slider('#schemeSlider .slider-content', slidingTime);
     var sliderProject1 = new Slider('#ourProjects .slider-content:eq(0)', slidingTime);
     var sliderProject2 = new Slider('#ourProjects .slider-content:eq(1)', slidingTime);
-
-    // tabs handler
-    $('.tabs div').click(function () {
-        $(this).parent().parent().find('.tabs div').removeClass('active');
-        $(this).addClass('active');
-        $(this).parent().parent().find('.slider-content').removeClass('active');
-        $(this).parent().parent().find('.slider-content:eq('+$(this).index()+')').addClass('active');
-    });
 
 });
