@@ -391,7 +391,19 @@
      background-color: #fff;
      height: 598px;
      border: 1px solid #00284f;
- }
+    text-align: center;
+}
+#schemeSlider .slide {
+    line-height: 100%;
+}
+#schemeSlider .slide img {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    /*left: 50%;*/
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
 #schemeSlider .slider-content {
     padding: 30px;
 }
@@ -1310,7 +1322,7 @@
     display: block;
 }
 .slides {
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
     width: 100%;
     top: -58px;
