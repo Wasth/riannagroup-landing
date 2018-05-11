@@ -932,6 +932,122 @@
     height: 598px;
     border: 1px solid #00284f;
 }
+#ourProjects .slide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/**/
+#ourProjects .slide:nth-child(1) > div:nth-child(1) {
+    background-image: url('../img/projectslider/slidebg1.jpg');
+    background-size: cover;
+}
+#ourProjects .slide:nth-child(2) > div:nth-child(1) {
+    background-image: url('../img/projectslider/slidebg2.jpg');
+    background-size: cover;
+}
+#ourProjects .slide .img-block {
+    padding: 20px;
+}
+
+#ourProjects .slide .img-block h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-left: 70px;
+    margin-top: 70px;
+    color: #fff;
+    text-transform: uppercase;
+}
+#ourProjects .slide .img-block h2 span{
+    font-weight: bold;
+}
+#ourProjects .slide .info-block {
+    padding: 20px;
+}
+#ourProjects .slide .info {
+    border-bottom: 1px solid #c1d9eb;
+    padding-bottom: 20px;
+}
+#ourProjects .slide .info .logo {
+    margin-right: 20px;
+}
+#ourProjects .slide .info h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #00284f;
+}
+#ourProjects .slide .info p {
+    font-size: 16px;
+    color: #00284f;
+    margin-top: 10px;
+}
+#ourProjects .slide .tasks h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #00284f;
+    margin-top: 25px;
+}
+#ourProjects .slide .tasks p {
+    font-size: 16px;
+    color: #00284f;
+    margin-top: 5px;
+}
+#ourProjects .slide .tasks p img {
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+#ourProjects .slide .solves {
+    border-bottom: 1px solid #c1d9eb;
+    padding-bottom: 20px;
+}
+#ourProjects .slide .solves h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #e84042;
+    margin-top: 25px;
+}
+#ourProjects .slide .solves p {
+    font-size: 16px;
+    color: #00284f;
+    margin-top: 5px;
+    font-weight: bold;
+}
+#ourProjects .slide .solves p img {
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+#ourProjects .slide .features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+#ourProjects .slide .feature{
+    height: 115px;
+    background-color: #e84042;
+    color: #fff;
+    /*padding-top: 10px;*/
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-align: center;
+}
+#ourProjects .slide .feature div {
+    display: table-cell;
+    vertical-align: middle;
+    height: 102px;
+    width: 125px;
+    text-align: center;
+}
+#ourProjects .slide .feature h3 {
+    font-size: 24px;
+    width: 100%;
+}
+#ourProjects .slide .feature p {
+    font-size: 16px;
+    font-weight: bold;
+}
+/**/
 #ourProjects .slider-content {
     padding: 30px;
 }

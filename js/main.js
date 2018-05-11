@@ -70,12 +70,8 @@ $(function () {
     }
     // activate sliders
     var slidingTime = 300;
-    var sliderOpora1 = new Slider('#oporaSlider .slider-content:eq(0)', slidingTime);
-    var sliderOpora2 = new Slider('#oporaSlider .slider-content:eq(1)', slidingTime);
-    var sliderOpora3 = new Slider('#oporaSlider .slider-content:eq(2)', slidingTime);
-    var sliderOpora4 = new Slider('#oporaSlider .slider-content:eq(3)', slidingTime);
+    var sliderOpora1 = new Slider('#oporaSlider .slider-content', slidingTime);
     var sliderScheme = new Slider('#schemeSlider .slider-content', slidingTime);
-    var sliderProject1 = new Slider('#ourProjects .slider-content:eq(0)', slidingTime);
-    var sliderProject2 = new Slider('#ourProjects .slider-content:eq(1)', slidingTime);
+    var sliderProject1 = new Slider('#ourProjects .slider-content', slidingTime);
 
 });
