@@ -39,7 +39,7 @@ $(function () {
             this.getI(i).animate({
                 'left':'0'
             },time);
-        }
+        };
         // preparing slider
         for(var i = 0;i < this.slideCount;i++) {
             this.setItoRight(i,0);
@@ -62,6 +62,7 @@ $(function () {
             }
         });
     }
+    // activate sliders
     var slidingTime = 300;
     var sliderOpora1 = new Slider('#oporaSlider .slider-content:eq(0)', slidingTime);
     var sliderOpora2 = new Slider('#oporaSlider .slider-content:eq(1)', slidingTime);
@@ -69,4 +70,11 @@ $(function () {
     var sliderOpora4 = new Slider('#oporaSlider .slider-content:eq(3)', slidingTime);
     var sliderScheme = new Slider('#schemeSlider .slider-content', slidingTime);
     var sliderProject = new Slider('#ourProjects .slider-content', slidingTime);
+
+    // tabs handler
+    $('.tabs div').click(function () {
+        $(this).parent().parent().find('.tabs div').removeClass('active');
+        $(this).addClass('active')
+    });
+
 });
