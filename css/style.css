@@ -18,7 +18,7 @@
     margin: 0 auto;
 }
 .wrapper {
-    min-width: 1250px;
+    min-width: 1300px;
 }
 .clear {
     clear: both;
@@ -72,19 +72,22 @@
 #header .mail-text {
     margin-left: 35px;
 }
-/*@media (max-width: 1125px) {*/
+@media (max-width: 1125px) {
     /*#header .header-line {*/
         /*display: block;*/
         /*float: none;*/
         /*clear: both;*/
         /*text-align: center;*/
     /*}*/
-    /*#header .logo {*/
+    #header .logo {
         /*display: block;*/
-        /*float: none;*/
-        /*text-align: center;*/
-    /*}*/
-/*}*/
+        float: none;
+        text-align: center;
+    }
+    #header .container {
+        text-align: center;
+    }
+}
 
 /* main block */
 
