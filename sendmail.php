@@ -1,6 +1,6 @@
 <?php
 //$filename = "form.txt"; //Имя файла для прикрепления
-$to = "sales@opora-rg.ru"; //Кому
+$to = "riasta@yandex.ru"; //Кому
 $from = "lp@opora-rg.ru"; //От кого
 $subject = "Заявка"; //Тема
 $message = "\n"; //Текст письма
@@ -41,6 +41,6 @@ if(isset($_FILES['rekv'])) {
     $body .= "Content-Disposition: attachment; filename==?utf-8?B?".base64_encode($_FILES['rekv']['name'])."?=\n\n";
     $body .= chunk_split(base64_encode($text))."\n";
 }
-$body .= "--".$boundary ."--\n";
+$body .= "---".$boundary ."--\n";
 mail($to, $subject, $body, $headers); //Отправляем письмо
 header('Location: index.html');
