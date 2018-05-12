@@ -35,9 +35,9 @@ if(isset($_FILES['rekv'])) {
     $text = fread($file, filesize($_FILES['rekv']['tmp_name'])); //Считываем весь файл
     fclose($file); //Закрываем файл
     /* Добавляем тип содержимого, кодируем текст файла и добавляем в тело письма */
-    $body .= "Content-Type: application/octet-stream; name==?utf-8?B?".base64_encode($_FILES['order']['name'])."?=\n";
+    $body .= "Content-Type: application/octet-stream; name==?utf-8?B?".base64_encode($_FILES['rekv']['name'])."?=\n";
     $body .= "Content-Transfer-Encoding: base64\n";
-    $body .= "Content-Disposition: attachment; filename==?utf-8?B?".base64_encode($_FILES['order']['name'])."?=\n\n";
+    $body .= "Content-Disposition: attachment; filename==?utf-8?B?".base64_encode($_FILES['rekv']['name'])."?=\n\n";
     $body .= chunk_split(base64_encode($text))."\n";
 }
 $body .= "--".$boundary ."--\n";
