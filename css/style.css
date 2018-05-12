@@ -51,12 +51,21 @@
 .tabs div, .tabs div.active {
     transition: 0.2s;
 }
+.mobile-block {
+    display: none;
+}
+@media (max-width: 1125px) {
+    .mobile-block {
+        display: block;
+    }
+}
 /* header */
 #header {
     margin-top: 20px;
 }
 #header .header-line {
     font-size: 20px;
+    max-width: 87%;
 }
 #header .email {
     color: #e84042;
@@ -83,15 +92,15 @@
         /*clear: both;*/
         /*text-align: center;*/
     /*}*/
-    #header .logo {
-        /*display: block;*/
-        float: none;
-        text-align: center;
-    }
-    #header .container {
-        text-align: center;
-        margin-bottom: 20px;
-    }
+    /*#header .logo {*/
+        /*!*display: block;*!*/
+        /*!*float: none;*!*/
+        /*text-align: center;*/
+    /*}*/
+    /*#header .container {*/
+        /*text-align: center;*/
+        /*margin-bottom: 20px;*/
+    /*}*/
 }
 
 /* main block */
