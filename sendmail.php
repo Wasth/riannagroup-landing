@@ -29,6 +29,7 @@ if(isset($_FILES['order'])) {
     $body .= "Content-Transfer-Encoding: base64\n";
     $body .= "Content-Disposition: attachment; filename==?utf-8?B?".base64_encode($_FILES['order']['name'])."?=\n\n";
     $body .= chunk_split(base64_encode($text))."\n";
+    $body .= "--$boundary\n";
 }
 if(isset($_FILES['rekv'])) {
     $file = fopen($_FILES['rekv']['tmp_name'], "r"); //Открываем файл
