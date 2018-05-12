@@ -16,11 +16,8 @@ $body = "--$boundary\n";
 /* Присоединяем текстовое сообщение */
 $body .= "Content-type: text/html; charset='utf-8'\n";
 $body .= "Content-Transfer-Encoding: quoted-printablenn";
-//$body .= "Content-Disposition: attachment; filename==?utf-8?B?".base64_encode($filename)."?=\n\n";
-$body .= $message."\n";
-$body .= "--$boundary\n";
-//var_dump($_FILES);
-if(isset($_FILES['order'])) {
+if(!empty($_FILES['order']['name'])) {
+    echo 'order';
     $file = fopen($_FILES['order']['tmp_name'], "r"); //Открываем файл
     $text = fread($file, filesize($_FILES['order']['tmp_name'])); //Считываем весь файл
     fclose($file); //Закрываем файл
@@ -29,9 +26,10 @@ if(isset($_FILES['order'])) {
     $body .= "Content-Transfer-Encoding: base64\n";
     $body .= "Content-Disposition: attachment; filename==?utf-8?B?".base64_encode($_FILES['order']['name'])."?=\n\n";
     $body .= chunk_split(base64_encode($text))."\n";
-    $body .= "--$boundary\n";
+    $body .= "$boundary\n";
 }
-if(isset($_FILES['rekv'])) {
+if(!empty($_FILES['rekv']['name'])) {
+    echo 'rekv';
     $file = fopen($_FILES['rekv']['tmp_name'], "r"); //Открываем файл
     $text = fread($file, filesize($_FILES['rekv']['tmp_name'])); //Считываем весь файл
     fclose($file); //Закрываем файл
@@ -40,7 +38,13 @@ if(isset($_FILES['rekv'])) {
     $body .= "Content-Transfer-Encoding: base64\n";
     $body .= "Content-Disposition: attachment; filename==?utf-8?B?".base64_encode($_FILES['rekv']['name'])."?=\n\n";
     $body .= chunk_split(base64_encode($text))."\n";
+    $body .= "$boundary\n";
 }
+//$body .= "Content-Disposition: attachment; filename==?utf-8?B?".base64_encode($filename)."?=\n\n";
+$body .= $message."\n";
+$body .= "$boundary\n";
+//var_dump($_FILES);
+
 $body .= "---".$boundary ."--\n";
 mail($to, $subject, $body, $headers); //Отправляем письмо
-header('Location: index.html');
+//header('Location: index.html');
