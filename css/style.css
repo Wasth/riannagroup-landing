@@ -72,6 +72,10 @@
 #header .mail-text {
     margin-left: 35px;
 }
+#header .number {
+    color: #000;
+    text-decoration: none;
+}
 @media (max-width: 1125px) {
     /*#header .header-line {*/
         /*display: block;*/
