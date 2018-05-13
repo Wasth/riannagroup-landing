@@ -1150,8 +1150,8 @@
 }
 @media (max-width: 1125px) {
     .question .answer {
-        max-width: 54%;
-        margin-top: 15px;
+        max-width: 60%;
+        margin-top: 30px;
     }
 }
 /* about block */
