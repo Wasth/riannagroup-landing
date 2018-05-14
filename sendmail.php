@@ -25,27 +25,27 @@ function sendMailAttachment($mailTo, $From, $subject_text, $message){
     $multipart .= "Content-Transfer-Encoding: base64$EOL";
     $multipart .= $EOL; // раздел между заголовками и телом html-части
     $multipart .= chunk_split(base64_encode($message));
-
-
-    foreach($_FILES["order"]["name"] as $key => $value){
-        $filename = $_FILES["order"]["tmp_name"][$key];
-        $file = fopen($filename, "rb");
-        $data = fread($file,  filesize( $filename ) );
-        fclose($file);
-        $NameFile = $_FILES["order"]["name"][$key]; // в этой переменной надо сформировать имя файла (без всякого пути);
-        $File = $data;
-        $multipart .=  "$EOL--$boundary$EOL";
-        $multipart .= "Content-Type: application/octet-stream; name=\"$NameFile\"$EOL";
-        $multipart .= "Content-Transfer-Encoding: base64$EOL";
-        $multipart .= "Content-Disposition: attachment; filename=\"$NameFile\"$EOL";
-        $multipart .= $EOL; // раздел между заголовками и телом прикрепленного файла
-        $multipart .= chunk_split(base64_encode($File));
-
+    if(!empty($_FILES["order"]['name'][0])) {
+        foreach($_FILES["order"]["name"] as $key => $value){
+            $filename = $_FILES["order"]["tmp_name"][$key];
+            $file = fopen($filename, "rb");
+            $data = fread($file,  filesize( $filename ) );
+            fclose($file);
+            $NameFile = $_FILES["order"]["name"][$key]; // в этой переменной надо сформировать имя файла (без всякого пути);
+            $File = $data;
+            $multipart .=  "$EOL--$boundary$EOL";
+            $multipart .= "Content-Type: application/octet-stream; name=\"$NameFile\"$EOL";
+            $multipart .= "Content-Transfer-Encoding: base64$EOL";
+            $multipart .= "Content-Disposition: attachment; filename=\"$NameFile\"$EOL";
+            $multipart .= $EOL; // раздел между заголовками и телом прикрепленного файла
+            $multipart .= chunk_split(base64_encode($File));
+        }
     }
+
 
     $multipart .= "$EOL--$boundary--$EOL";
     mail($to, $subject, $multipart, $headers);
 
 }
 sendMailAttachment($to,$from,$subject,$message);
-header('Location: index.html');
+header('Location: /?thanks=t');
