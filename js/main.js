@@ -74,4 +74,7 @@ $(function () {
     var sliderScheme = new Slider('#schemeSlider .slider-content', slidingTime);
     var sliderProject1 = new Slider('#ourProjects .slider-content', slidingTime);
 
+    $(".popup .mess").click(function () {
+        $(this).hide();
+    });
 });
