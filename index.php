@@ -159,7 +159,7 @@
             <h2><span>со скидкой 10%</span> на первый заказ за 10-15 дней на заводе в Татарстане</h2>
             <form enctype="multipart/form-data" method="post" action="sendmail.php">
                 <div class="row-3">
-                    <input type="text" name="name" placeholder="Ваше имя"> <input type="text" name="phone" placeholder="Ваш телефон"> <input type="text" name="email" placeholder="Ваше E-mail">
+                    <input type="text" name="name" placeholder="Ваше имя" required> <input type="text" name="phone" placeholder="Ваш телефон" required> <input type="email" name="email" placeholder="Ваше E-mail" required>
                 </div>
                 <textarea name="ordertext" placeholder="Ваш заказ"></textarea>
                 <input type="file" name="order[]" id="order"><input type="file" name="order[]" id="rekv">
@@ -323,7 +323,7 @@
             <form enctype="multipart/form-data" method="post" action="sendmail.php">
                 <div class="row">
                     <div class="col">
-                        <input type="text" name="name" placeholder="Ваше имя"> <input type="text" name="phone" placeholder="Ваш телефон"> <input type="text" name="email" placeholder="Ваше E-mail">
+                        <input type="text" name="name" placeholder="Ваше имя" required> <input type="text" name="phone" placeholder="Ваш телефон" required> <input type="email" name="email" placeholder="Ваше E-mail" required>
                     </div>
                     <div class="col">
                         <textarea name="ordertext" placeholder="Ваш заказ"></textarea>
@@ -979,7 +979,7 @@
                         <form enctype="multipart/form-data" method="post" action="sendmail.php">
                             <div class="row">
                                 <div class="col">
-                                    <input type="text" name="name" placeholder="Ваше имя"> <input type="text" name="phone" placeholder="Ваш телефон"> <input type="text" name="email" placeholder="Ваше E-mail">
+                                    <input type="text" name="name" placeholder="Ваше имя" required> <input type="text" name="phone" placeholder="Ваш телефон" required> <input type="email" name="email" placeholder="Ваше E-mail" required>
                                 </div>
                                 <div class="col">
                                     <textarea name="ordertext" placeholder="Ваш заказ"></textarea>
