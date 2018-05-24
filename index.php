@@ -156,7 +156,7 @@
         <div class="container">
             <img src="img/girl.png" alt="girl pic" id="mainGirl">
             <h1>Производство опор трубопроводов</h1>
-            <h2><span>со скидкой 10%</span> на первый заказ за 10-15 дней на заводе в Татарстане</h2>
+            <h2><span>от 1 дня</span> и <span>Бесплатная доставка</span> по всей территории РФ</h2>
             <form enctype="multipart/form-data" method="post" action="sendmail.php">
                 <div class="row-3">
                     <input type="text" name="name" placeholder="Ваше имя" required> <input type="text" name="phone" placeholder="Ваш телефон" required> <input type="email" name="email" placeholder="Ваше E-mail" required>
