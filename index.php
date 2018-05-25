@@ -145,7 +145,7 @@
                             <img src="img/mail.png" alt="mail logo">
                         </div>
                     </span>
-                    <a href="mailto:sales@opora-rg.ru" class="email bold">sales@opora-rg.ru</a>
+                    <a href="mailto:lp@opora-rg.ru " class="email bold">lp@opora-rg.ru</a>
                 </p>
             </div>
             <div class="clear"></div>
@@ -955,7 +955,7 @@
                         <div class="icon" style="background-image:url('img/mailicon.png');">
 
                         </div>
-                        <a href="mailto:sales@opora-rg.ru">sales@opora-rg.ru</a>
+                        <a href="mailto:lp@opora-rg.ru">lp@opora-rg.ru</a>
                     </div>
                     <div class="address">
                         <div class="icon" style="background-image:url('img/labelicon.png');">
